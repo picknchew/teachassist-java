@@ -1,0 +1,18 @@
+apply plugin: "maven"
+
+group 'me.picknchew.teachassistapi'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.3.0'
+    compile group: 'com.squareup.retrofit2', name: 'converter-gson', version:'2.3.0'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.2'
+}
